@@ -1,0 +1,22 @@
+<h2>Know of a pet needing a home?</h2>
+
+<!-- {{petObj | json}} -->
+<div class="form_container">
+    <form>
+        <div class="display_err" *ngIf="err.errors.name"> {{err.errors.name.message}}
+            <br>
+        </div>
+        Pet Name:<input type="text" name="name" [(ngModel)]="petObj.name">
+        <div class="display_err" *ngIf="err.errors.pettype">
+            {{err.errors.pettype.message}}
+        </div>
+        Pet type:<input type="text" name="pettype" [(ngModel)]="petObj.pettype"> Description:
+        <div class="display_err" *ngIf="err.errors.description">
+            {{err.errors.description.message}}
+        </div>
+        <input type="text" name="description" [(ngModel)]="petObj.description"> Skills
+        <div class="skill_container">Skill 1:<input type="text" name="skill1" [(ngModel)]="petObj.skill1"> Skill 2:<input type="text" name="skill2" [(ngModel)]="petObj.skill2"> Skills 3:<input type="text" name="skill3" [(ngModel)]="petObj.skill3"></div>
+        <button type="button" (click)="newPet()"> Add pet</button>
+        <button [routerLink]="['/pets']">Cancel</button>
+    </form>
+</div>

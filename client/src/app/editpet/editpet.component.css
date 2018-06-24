@@ -1,0 +1,15 @@
+.form_conatainer {
+    border: 1px solid grey;
+    margin: 30px;
+    padding: 30px;
+}
+
+input {
+    display: block;
+}
+
+button {
+    margin: 15px;
+    height: 30px;
+    background-color: cornflowerblue;
+}

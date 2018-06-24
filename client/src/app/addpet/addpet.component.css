@@ -1,0 +1,25 @@
+input {
+    display: block;
+}
+
+.skill_container {
+    margin-left: 30px;
+}
+
+button {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.form_container {
+    border: 1px solid grey;
+    width: 300px;
+}
+
+form {
+    padding: 20px;
+}
+
+.display_err {
+    color: red;
+}
